@@ -26,6 +26,10 @@ const createSlug3 = (title) => {
         throw new Error("Titolo non valido");
 }
 
+findPostById = (posts, id) => {
+    return posts.find(post => post.id === id);
+}
+
 module.exports = {
     getInitials,
     createSlug,
